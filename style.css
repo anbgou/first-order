@@ -1,0 +1,120 @@
+* {
+    /* font-family: 'Montserrat', 'sans-serif'; */
+    flex-direction: column;
+    align-items: center; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #F9B572;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    stroke: #FF8424;
+    border-radius: 50%;
+    /* border-color: #FAF8ED; */
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.name {
+    text-align: center;
+    font-family: 'Montserrat Subrayada';
+    font-size: 30;
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #748E63;
+    text-shadow: -2px 4px 3px #ba844f;
+}
+
+.underName {
+    text-align: center;
+    font-family: 'Montserrat';
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 800;
+    color: #FF8424;
+    text-shadow: -2px 4px 4px #ee8f30;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+button::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #FAF8ED;
+    transition: width 0.3s;
+}
+
+button:hover::after {
+    width: 100%;
+}
+
+.b1, .b2, .b3, .b4, .b5 {
+    position: inherit;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.telegramImg, .instagramImg, .discordImg, .tiktokImg, .youtubeImg {
+    width: 25px;
+    height: 30px;
+    fill: #000000;
+}
+
+.telegram, .instagram, .discord, .tiktok, .youtube {
+    font-family: 'Karla';
+    font-size: medium;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #748E63;
+    color: #FAF8ED;
+    font-size: 15px;
+    font-weight: 480;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.telegram {
+    padding: 15px 220px;
+}
+
+.instagram {
+    padding: 15px 218px;
+}
+
+.discord {
+    padding: 15px 230px;
+}
+
+.tiktok {
+    padding: 15px 235px;
+}
+
+.youtube {
+    padding: 15px 228px;
+}
+
+.telegram:hover, .instagram:hover, .discord:hover, .tiktok:hover, .youtube:hover {
+    background-color: #99B080;
+}
+
+
