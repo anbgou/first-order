@@ -1,10 +1,22 @@
 * {
-    /* font-family: 'Montserrat', 'sans-serif'; */
     flex-direction: column;
     align-items: center; 
     margin: 0; 
     padding: 0; 
-    background-color: #F9B572;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: -30px;
+    margin-bottom: 35px;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
 
 .head {
@@ -15,13 +27,14 @@
 }
 
 .photo {
+    transition-duration: 0.4s;
+
     width: 200px;
     height: 200px;
     stroke: #FF8424;
     border-radius: 50%;
-    /* border-color: #FAF8ED; */
     object-fit: cover;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 100px rgb(255, 85, 0);
 }
 
 .name {
@@ -33,9 +46,11 @@
     font-weight: 700;
     color: #748E63;
     text-shadow: -2px 4px 3px #ba844f;
+    background: none;
 }
 
 .underName {
+    background: none;
     text-align: center;
     font-family: 'Montserrat';
     margin-top: 10px;
@@ -49,7 +64,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 35px;
+    margin-top: 27px;
 }
 
 button::after {
@@ -70,19 +85,31 @@ button:hover::after {
     flex-direction: column;
     align-items: center;
     margin: 10px;
+    background: none;
 }
 
 .telegramImg, .instagramImg, .discordImg, .tiktokImg, .youtubeImg {
-    width: 25px;
-    height: 30px;
+    height: 20px;
+    width: auto;
     fill: #000000;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-top: 15px;
+    margin-left: 17px;
+    position: absolute;
+}
+
+.youtubeImg {
+    margin-left: 16px;
+    margin-top: 16px;
 }
 
 .telegram, .instagram, .discord, .tiktok, .youtube {
     font-family: 'Karla';
     font-size: medium;
-    margin-top: 10px;
-    border-radius: 5px;
+    margin-top: 2px;
+    border-radius: 150px;
     border: none;
     background-color: #748E63;
     color: #FAF8ED;
@@ -90,7 +117,7 @@ button:hover::after {
     font-weight: 480;
     cursor: pointer;
     transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .telegram {
@@ -116,5 +143,3 @@ button:hover::after {
 .telegram:hover, .instagram:hover, .discord:hover, .tiktok:hover, .youtube:hover {
     background-color: #99B080;
 }
-
-
