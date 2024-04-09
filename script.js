@@ -13,7 +13,7 @@ instagram.addEventListener("click", function () {
 })
 
 discord.addEventListener("click", function () {
-    window.open("discordapp.com/users/408166941006626816", "_blank");
+    window.open("https://discord.com/users/408166941006626816", "_blank");
 })
 
 tiktok.addEventListener("click", function () {
