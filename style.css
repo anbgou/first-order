@@ -27,14 +27,17 @@ body {
 }
 
 .photo {
-    transition-duration: 0.4s;
-
     width: 200px;
     height: 200px;
     stroke: #FF8424;
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0px 0px 100px rgb(255, 85, 0);
+    transition: transform 0.2s;
+}
+
+.photo:hover {
+    transform: scale(1.1);
 }
 
 .name {
@@ -47,6 +50,12 @@ body {
     color: #748E63;
     text-shadow: -2px 4px 3px #ba844f;
     background: none;
+    transition: transform 0.2s;
+    cursor: default;
+}
+
+.name:hover {
+    transform: scale(1.1);
 }
 
 .underName {
@@ -58,6 +67,12 @@ body {
     font-weight: 800;
     color: #FF8424;
     text-shadow: -2px 4px 4px #ee8f30;
+    transition: transform 0.2s;
+    cursor: default;
+}
+
+.underName:hover {
+    transform: scale(1.1);
 }
 
 .buttons {
